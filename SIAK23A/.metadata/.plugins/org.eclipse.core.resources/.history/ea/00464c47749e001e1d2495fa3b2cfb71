@@ -1,0 +1,49 @@
+package id.ac.undiksha.siak;
+
+import id.ac.undiksha.siak.people.Mahasiswa;
+import id.ac.undiksha.siak.people.Dosen;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Instansiasi objek Mahasiswa
+        Mahasiswa mhs1 = new Mahasiswa();
+        mhs1.setNim("1234");
+
+        System.out.println("NIM Mahasiswa 1: " + mhs1.getNim());
+
+        System.out.println("------");
+
+        Mahasiswa mhs2 = new Mahasiswa(
+                "2215101023",
+                "I Komang Pasek Bayu Atmaja",
+                "6 September 2005",
+                true,
+                "Br. Dinas Abang Kelod",
+                "ILKOM22",
+                "Ilmu Komputer",
+                "TI",
+                "Teknik Informatika",
+                "FTK"
+        );
+        
+        mhs2.printAllinfo();
+        
+        Dosen dosen2 = new Dosen(
+                "5678679",
+                "Dr.Andi",
+                true,
+                "Seraya",
+                "ILKOM",
+                "Ilmu Komputer",
+                "Dosen",
+                "TI",
+                "Teknik Informatika",
+                "FTK"
+        );
+        
+        dosen2.printAll();
+
+    }
+}

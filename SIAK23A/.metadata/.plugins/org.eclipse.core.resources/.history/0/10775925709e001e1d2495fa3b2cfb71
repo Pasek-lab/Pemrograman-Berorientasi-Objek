@@ -1,0 +1,48 @@
+package id.ac.undiksha.siak.people;
+
+import id.ac.undiksha.siak.organisasi.Prodi;
+public class Dosen extends Manusia {
+
+    private String nip;
+    private Prodi prodi;
+    private String jabatan;
+    
+    public Dosen() {
+    	super();
+    	prodi = new Prodi();
+        this.setNip("NIP belum diisi");
+        this.setJabatan("Jabatan belum diisi");
+    }
+    
+	public Dosen(String nip, String nama, String tglLahir, boolean jenisKelamin, String alamat, String kodeProdi, String namaProdi, String jabatan, String kodeJurusan, String namaJurusan, String namaFakultas) {
+		super(nama, tglLahir, alamat, jenisKelamin);
+		this.nip = nip;
+		prodi = new Prodi(kodeProdi, namaProdi, kodeJurusan, namaJurusan, namaFakultas);
+		this.jabatan = jabatan;
+	}
+	
+	public Dosen(String nama, String tgllahir, String alamat, boolean jk) {
+		super(nama, tgllahir, alamat, jk);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setNip(String nip) {
+        this.nip = nip;
+    }
+
+    public String getNip() {
+        return this.nip;
+    }
+
+    public void printAll() {
+        super.printAll();
+        System.out.println("NIP: " + getNip());
+    }
+
+	public void setTgllahir(String tgllahir) {
+		// TODO Auto-generated method stub
+		
+	}
+    
+    
+}

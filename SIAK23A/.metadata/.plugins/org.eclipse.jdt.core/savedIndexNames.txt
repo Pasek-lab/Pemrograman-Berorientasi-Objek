@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\LENOVO\eclipse-workspace\SIAK23A\.metadata\.plugins\org.eclipse.jdt.core
+1067094681.index
+1865797976.index
+204952979.index
+2583478835.index

@@ -1,0 +1,61 @@
+package id.ac.undiksha.siak;
+
+import id.ac.undiksha.siak.people.Mahasiswa;
+import id.ac.undiksha.siak.people.Dosen;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Instansiasi objek Mahasiswa
+        Mahasiswa mhs1 = new Mahasiswa();
+        mhs1.setNim("1234");
+
+        System.out.println("NIM Mahasiswa 1: " + mhs1.getNim());
+
+        System.out.println("------");
+
+        Mahasiswa mhs3 = new Mahasiswa(
+                "1234",
+                "Budi",
+                "1 February 2000",
+                "Karangansem",
+                "ILKOM",
+                true
+                "TI",
+                "Teknik Informatika",
+                "FTK",
+                "Fakultas Teknik Kejuruan"
+        );
+        
+        mhs3.printAll();
+
+        // Instansiasi objek Dosen
+        Dosen dosen1 = new Dosen();
+        dosen1.setNip("5678");
+        dosen1.setNama("Dr. Budi");
+        dosen1.setAlamat("Denpasar");
+        dosen1.setJk(true);
+        dosen1.setTgllahir("5 Februari 1980");
+
+        // Memanggil metode printAll() dari objek Dosen
+        System.out.println("\nInfo Dosen:");
+        dosen1.printAll();
+
+        // Pengaturan atribut Mahasiswa
+//        mhs1.setNama("Ari");
+//        mhs1.setAlamat("Singaraja");
+//        mhs1.setJk(true);
+//        mhs1.setTgllahir("1 Januari 2000");
+//        mhs1.setProdi("Ilmu Komputer");
+
+        // Menampilkan info Mahasiswa
+        System.out.println("\nInfo Mahasiswa 1:");
+        System.out.println("NIM: " + mhs1.getNim());
+//        System.out.println("Nama: " + mhs1.getNama());
+//        System.out.println("Alamat: " + mhs1.getAlamat());
+//        System.out.println("Jenis Kelamin: " + (mhs1.getjk() ? "Laki-laki" : "Perempuan"));
+//        System.out.println("Tanggal Lahir: " + mhs1.getTgllahir());
+        System.out.println("Program Studi: " + mhs1.getProdi());
+    }
+}

@@ -1,0 +1,10 @@
+package id.ac.undiksha.siak.organisasi;
+
+public class Prodi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
